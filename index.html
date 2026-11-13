@@ -280,48 +280,72 @@ textarea{width:100%;min-height:70px;border:1px solid var(--line);border-radius:1
 /* ───────── ДАНІ: доповнюй ці три списки ─────────
    Поле en містить німецьку фразу (назву залишено для сумісності зі зразком). */
 const CARDS=[
-{lesson:'Unterricht 1',en:'fair, gerecht',uk:'справедливий',ex:'Ein Richter soll ___ sein und niemanden bevorzugen.',ans:'gerecht|fair',col:['ein faires Urteil','gerecht behandeln','fair bleiben'],dict:'gerecht'},
-{lesson:'Unterricht 1',en:'ein Urteil sprechen',uk:'виносити вирок',ex:'Am Ende der Verhandlung wird der Richter das ___ sprechen.',ans:'Urteil',col:['ein gerechtes Urteil','Recht sprechen','das Urteil verkünden'],dict:'Urteil'},
-{lesson:'Unterricht 1',en:'gute Menschenkenntnis',uk:'уміння розбиратися в людях',ex:'Eine Lehrerin braucht gute ___, um Schüler richtig zu verstehen.',ans:'Menschenkenntnis',col:['Menschenkenntnis haben','viel Menschenkenntnis','keine Menschenkenntnis haben'],dict:'Menschenkenntnis'},
-{lesson:'Unterricht 1',en:'die Gerichtsverhandlungen (Pl.)',uk:'судові засідання',ex:'Die ___ sind meistens öffentlich.',ans:'Gerichtsverhandlungen',col:['eine Gerichtsverhandlung besuchen','öffentliche Gerichtsverhandlungen','die Verhandlung beginnt'],dict:'Gerichtsverhandlung',say:'die Gerichtsverhandlungen'},
-{lesson:'Unterricht 1',en:'von Ereignissen berichten',uk:'повідомляти про події',ex:'Journalisten müssen schnell und objektiv von Ereignissen ___.',ans:'berichten',col:['über Ereignisse berichten','live berichten','ausführlich berichten'],dict:'berichten'},
-{lesson:'Unterricht 1',en:'für die Gesellschaft arbeiten',uk:'працювати на благо суспільства',ex:'Viele Politiker möchten für die ___ arbeiten.',ans:'Gesellschaft',col:['für das Gemeinwohl arbeiten','ehrenamtlich arbeiten','der Gesellschaft dienen'],dict:'Gesellschaft'},
-{lesson:'Unterricht 1',en:'in der Öffentlichkeit sein',uk:'бути на публіці',ex:'Politiker sind fast immer in der ___.',ans:'Öffentlichkeit',col:['an die Öffentlichkeit gehen','die breite Öffentlichkeit','in der Öffentlichkeit stehen'],dict:'Öffentlichkeit'},
-{lesson:'Unterricht 1',en:'die Partei',uk:'партія',ex:'Er ist seit zehn Jahren Mitglied in einer ___.',ans:'Partei',col:['in eine Partei eintreten','eine Partei wählen','Mitglied einer Partei sein'],dict:'Partei'},
-{lesson:'Unterricht 1',en:'Entscheidungen treffen',uk:'приймати рішення',ex:'Ein Chef muss schnell Entscheidungen ___.',ans:'treffen',col:['eine wichtige Entscheidung','vor einer Entscheidung stehen','eine Entscheidung treffen'],dict:'Entscheidung'},
-{lesson:'Unterricht 1',en:'Gemüse anbauen',uk:'вирощувати овочі',ex:'Viele Bauern wollen mehr Gemüse ___.',ans:'anbauen',col:['Gemüse und Obst anbauen','Getreide anbauen','biologisch anbauen'],dict:'anbauen'},
-{lesson:'Unterricht 1',en:'die Landwirtschaft',uk:'сільське господарство',ex:'Er arbeitet in der ___ und hat einen Bauernhof.',ans:'Landwirtschaft',col:['in der Landwirtschaft arbeiten','ökologische Landwirtschaft','Landwirtschaft betreiben'],dict:'Landwirtschaft'},
-{lesson:'Unterricht 1',en:'das Unternehmen',uk:'підприємство',ex:'Mein Bruder hat ein kleines ___ gegründet.',ans:'Unternehmen',col:['ein Unternehmen gründen','ein Unternehmen leiten','ein großes Unternehmen'],dict:'Unternehmen'},
-{lesson:'Unterricht 1',en:'Geräte herstellen',uk:'виготовляти прилади',ex:'Diese Firma will neue elektrische Geräte ___.',ans:'herstellen',col:['technische Geräte','in Serie herstellen','Möbel herstellen'],dict:'herstellen'},
-{lesson:'Unterricht 1',en:'der Kontakt mit Menschen',uk:'контакт із людьми',ex:'In diesem Beruf hat man viel ___ mit Menschen.',ans:'Kontakt',col:['Kontakt haben','Kontakt aufnehmen','den Kontakt halten'],dict:'Kontakt'},
-{lesson:'Unterricht 1',en:'das Trinkgeld',uk:'чайові',ex:'Im Restaurant gebe ich der Kellnerin immer ein ___.',ans:'Trinkgeld',col:['Trinkgeld geben','Trinkgeld bekommen','ein hohes Trinkgeld'],dict:'Trinkgeld'},
-{lesson:'Unterricht 1',en:'die Technik',uk:'техніка',ex:'Er interessiert sich sehr für ___ und repariert gern Geräte.',ans:'Technik',col:['moderne Technik','sich für Technik interessieren','neue Technik'],dict:'Technik'},
-{lesson:'Unterricht 1',en:'Analysen machen',uk:'робити аналізи',ex:'Die Chemikerin muss jeden Tag viele ___ machen.',ans:'Analysen',col:['eine Analyse durchführen','genaue Analysen','Daten analysieren'],dict:'Analyse'},
-{lesson:'Unterricht 1',en:'körperlich anstrengend sein',uk:'бути фізично виснажливим',ex:'Der Beruf ist ___ anstrengend, aber ich mag ihn.',ans:'körperlich',col:['körperlich arbeiten','körperlich fit','körperliche Arbeit'],dict:'körperlich'},
-{lesson:'Unterricht 1',en:'das Labor',uk:'лабораторія',ex:'Die Chemikerin arbeitet den ganzen Tag im ___.',ans:'Labor',col:['im Labor arbeiten','ein medizinisches Labor','Proben ins Labor schicken'],dict:'Labor'},
-{lesson:'Unterricht 1',en:'eine Lösung finden',uk:'знайти рішення',ex:'Wir müssen schnell eine ___ für das Problem finden.',ans:'Lösung',col:['eine Lösung für das Problem','eine gute Lösung','nach einer Lösung suchen'],dict:'Lösung'},
-{lesson:'Unterricht 1',en:'das Studium',uk:'навчання в університеті',ex:'Nach dem ___ möchte sie als Ingenieurin arbeiten.',ans:'Studium',col:['ein Studium beginnen','das Studium abschließen','ein Studium abbrechen'],dict:'Studium'},
-{lesson:'Unterricht 1',en:'schmutzig werden',uk:'забруднюватися',ex:'Bei dieser Arbeit werden die Hände schnell ___.',ans:'schmutzig',col:['schmutzige Hände','schmutzige Kleidung','sich schmutzig machen'],dict:'schmutzig'},
-{lesson:'Unterricht 1',en:'früh aufstehen',uk:'рано вставати',ex:'Bäcker müssen jeden Morgen sehr ___ aufstehen.',ans:'früh',col:['früh am Morgen','früh anfangen','um fünf Uhr aufstehen'],dict:'früh'},
-{lesson:'Unterricht 1',en:'nachmittags frei haben',uk:'бути вільним по обіді',ex:'Lehrer haben oft ___ frei.',ans:'nachmittags',col:['am Nachmittag frei haben','freie Zeit haben','früh Feierabend haben'],dict:'nachmittags'},
-{lesson:'Unterricht 1',en:'sehr exakt arbeiten',uk:'працювати дуже точно',ex:'Ein Uhrmacher muss sehr ___ arbeiten.',ans:'exakt',col:['exakt arbeiten','exakte Zahlen','exakt messen'],dict:'exakt'},
-{lesson:'Unterricht 1',en:'Tests durchführen',uk:'проводити тести (випробування)',ex:'Die Forscher wollen mehrere Tests ___.',ans:'durchführen',col:['ein Experiment durchführen','eine Untersuchung durchführen','Tests auswerten'],dict:'durchführen'},
-{lesson:'Unterricht 1',en:'die Eigenschaften',uk:'якості, властивості',ex:'Welche ___ braucht man für diesen Beruf?',ans:'Eigenschaften',col:['gute Eigenschaften','positive Eigenschaften','besondere Eigenschaften'],dict:'Eigenschaft'}
+{lesson:'Arbeitswelt',en:'fair, gerecht',uk:'справедливий',ex:'Ein Richter soll ___ sein und niemanden bevorzugen.',ans:'gerecht|fair',col:['ein faires Urteil','gerecht behandeln','fair bleiben'],dict:'gerecht'},
+{lesson:'Arbeitswelt',en:'ein Urteil sprechen',uk:'виносити вирок',ex:'Am Ende der Verhandlung wird der Richter das ___ sprechen.',ans:'Urteil',col:['ein gerechtes Urteil','Recht sprechen','das Urteil verkünden'],dict:'Urteil'},
+{lesson:'Arbeitswelt',en:'gute Menschenkenntnis',uk:'уміння розбиратися в людях',ex:'Eine Lehrerin braucht gute ___, um Schüler richtig zu verstehen.',ans:'Menschenkenntnis',col:['Menschenkenntnis haben','viel Menschenkenntnis','keine Menschenkenntnis haben'],dict:'Menschenkenntnis'},
+{lesson:'Arbeitswelt',en:'die Gerichtsverhandlungen (Pl.)',uk:'судові засідання',ex:'Die ___ sind meistens öffentlich.',ans:'Gerichtsverhandlungen',col:['eine Gerichtsverhandlung besuchen','öffentliche Gerichtsverhandlungen','die Verhandlung beginnt'],dict:'Gerichtsverhandlung',say:'die Gerichtsverhandlungen'},
+{lesson:'Arbeitswelt',en:'von Ereignissen berichten',uk:'повідомляти про події',ex:'Journalisten müssen schnell und objektiv von Ereignissen ___.',ans:'berichten',col:['über Ereignisse berichten','live berichten','ausführlich berichten'],dict:'berichten'},
+{lesson:'Arbeitswelt',en:'für die Gesellschaft arbeiten',uk:'працювати на благо суспільства',ex:'Viele Politiker möchten für die ___ arbeiten.',ans:'Gesellschaft',col:['für das Gemeinwohl arbeiten','ehrenamtlich arbeiten','der Gesellschaft dienen'],dict:'Gesellschaft'},
+{lesson:'Arbeitswelt',en:'in der Öffentlichkeit sein',uk:'бути на публіці',ex:'Politiker sind fast immer in der ___.',ans:'Öffentlichkeit',col:['an die Öffentlichkeit gehen','die breite Öffentlichkeit','in der Öffentlichkeit stehen'],dict:'Öffentlichkeit'},
+{lesson:'Arbeitswelt',en:'die Partei',uk:'партія',ex:'Er ist seit zehn Jahren Mitglied in einer ___.',ans:'Partei',col:['in eine Partei eintreten','eine Partei wählen','Mitglied einer Partei sein'],dict:'Partei'},
+{lesson:'Arbeitswelt',en:'Entscheidungen treffen',uk:'приймати рішення',ex:'Ein Chef muss schnell Entscheidungen ___.',ans:'treffen',col:['eine wichtige Entscheidung','vor einer Entscheidung stehen','eine Entscheidung treffen'],dict:'Entscheidung'},
+{lesson:'Arbeitswelt',en:'Gemüse anbauen',uk:'вирощувати овочі',ex:'Viele Bauern wollen mehr Gemüse ___.',ans:'anbauen',col:['Gemüse und Obst anbauen','Getreide anbauen','biologisch anbauen'],dict:'anbauen'},
+{lesson:'Arbeitswelt',en:'die Landwirtschaft',uk:'сільське господарство',ex:'Er arbeitet in der ___ und hat einen Bauernhof.',ans:'Landwirtschaft',col:['in der Landwirtschaft arbeiten','ökologische Landwirtschaft','Landwirtschaft betreiben'],dict:'Landwirtschaft'},
+{lesson:'Arbeitswelt',en:'das Unternehmen',uk:'підприємство',ex:'Mein Bruder hat ein kleines ___ gegründet.',ans:'Unternehmen',col:['ein Unternehmen gründen','ein Unternehmen leiten','ein großes Unternehmen'],dict:'Unternehmen'},
+{lesson:'Arbeitswelt',en:'Geräte herstellen',uk:'виготовляти прилади',ex:'Diese Firma will neue elektrische Geräte ___.',ans:'herstellen',col:['technische Geräte','in Serie herstellen','Möbel herstellen'],dict:'herstellen'},
+{lesson:'Arbeitswelt',en:'der Kontakt mit Menschen',uk:'контакт із людьми',ex:'In diesem Beruf hat man viel ___ mit Menschen.',ans:'Kontakt',col:['Kontakt haben','Kontakt aufnehmen','den Kontakt halten'],dict:'Kontakt'},
+{lesson:'Arbeitswelt',en:'das Trinkgeld',uk:'чайові',ex:'Im Restaurant gebe ich der Kellnerin immer ein ___.',ans:'Trinkgeld',col:['Trinkgeld geben','Trinkgeld bekommen','ein hohes Trinkgeld'],dict:'Trinkgeld'},
+{lesson:'Arbeitswelt',en:'die Technik',uk:'техніка',ex:'Er interessiert sich sehr für ___ und repariert gern Geräte.',ans:'Technik',col:['moderne Technik','sich für Technik interessieren','neue Technik'],dict:'Technik'},
+{lesson:'Arbeitswelt',en:'Analysen machen',uk:'робити аналізи',ex:'Die Chemikerin muss jeden Tag viele ___ machen.',ans:'Analysen',col:['eine Analyse durchführen','genaue Analysen','Daten analysieren'],dict:'Analyse'},
+{lesson:'Arbeitswelt',en:'körperlich anstrengend sein',uk:'бути фізично виснажливим',ex:'Der Beruf ist ___ anstrengend, aber ich mag ihn.',ans:'körperlich',col:['körperlich arbeiten','körperlich fit','körperliche Arbeit'],dict:'körperlich'},
+{lesson:'Arbeitswelt',en:'das Labor',uk:'лабораторія',ex:'Die Chemikerin arbeitet den ganzen Tag im ___.',ans:'Labor',col:['im Labor arbeiten','ein medizinisches Labor','Proben ins Labor schicken'],dict:'Labor'},
+{lesson:'Arbeitswelt',en:'eine Lösung finden',uk:'знайти рішення',ex:'Wir müssen schnell eine ___ für das Problem finden.',ans:'Lösung',col:['eine Lösung für das Problem','eine gute Lösung','nach einer Lösung suchen'],dict:'Lösung'},
+{lesson:'Arbeitswelt',en:'das Studium',uk:'навчання в університеті',ex:'Nach dem ___ möchte sie als Ingenieurin arbeiten.',ans:'Studium',col:['ein Studium beginnen','das Studium abschließen','ein Studium abbrechen'],dict:'Studium'},
+{lesson:'Arbeitswelt',en:'schmutzig werden',uk:'забруднюватися',ex:'Bei dieser Arbeit werden die Hände schnell ___.',ans:'schmutzig',col:['schmutzige Hände','schmutzige Kleidung','sich schmutzig machen'],dict:'schmutzig'},
+{lesson:'Arbeitswelt',en:'früh aufstehen',uk:'рано вставати',ex:'Bäcker müssen jeden Morgen sehr ___ aufstehen.',ans:'früh',col:['früh am Morgen','früh anfangen','um fünf Uhr aufstehen'],dict:'früh'},
+{lesson:'Arbeitswelt',en:'nachmittags frei haben',uk:'бути вільним по обіді',ex:'Lehrer haben oft ___ frei.',ans:'nachmittags',col:['am Nachmittag frei haben','freie Zeit haben','früh Feierabend haben'],dict:'nachmittags'},
+{lesson:'Arbeitswelt',en:'sehr exakt arbeiten',uk:'працювати дуже точно',ex:'Ein Uhrmacher muss sehr ___ arbeiten.',ans:'exakt',col:['exakt arbeiten','exakte Zahlen','exakt messen'],dict:'exakt'},
+{lesson:'Arbeitswelt',en:'Tests durchführen',uk:'проводити тести (випробування)',ex:'Die Forscher wollen mehrere Tests ___.',ans:'durchführen',col:['ein Experiment durchführen','eine Untersuchung durchführen','Tests auswerten'],dict:'durchführen'},
+{lesson:'Arbeitswelt',en:'die Eigenschaften',uk:'якості, властивості',ex:'Welche ___ braucht man für diesen Beruf?',ans:'Eigenschaften',col:['gute Eigenschaften','positive Eigenschaften','besondere Eigenschaften'],dict:'Eigenschaft'},
+{lesson:'Bewerbung',en:'die Bewerbung',uk:'заява на роботу, подання документів',ex:'Ich schicke meine ___ per E-Mail an die Firma.',ans:'Bewerbung',col:['eine Bewerbung schreiben','eine Bewerbung schicken','die Bewerbungsunterlagen'],dict:'Bewerbung'},
+{lesson:'Bewerbung',en:'das Bewerbungsschreiben',uk:'супровідний лист',ex:'Im ___ erkläre ich, warum ich die Stelle möchte.',ans:'Bewerbungsschreiben',col:['ein Bewerbungsschreiben verfassen','das Bewerbungsschreiben korrigieren','ein kurzes Bewerbungsschreiben'],dict:'Bewerbungsschreiben'},
+{lesson:'Bewerbung',en:'der Lebenslauf',uk:'біографія, резюме',ex:'Im ___ stehen meine Ausbildung und meine Berufserfahrung.',ans:'Lebenslauf',col:['einen Lebenslauf schreiben','ein tabellarischer Lebenslauf','den Lebenslauf aktualisieren'],dict:'Lebenslauf'},
+{lesson:'Bewerbung',en:'das Bewerbungsfoto',uk:'професійне фото',ex:'Für das ___ gehe ich zum Fotografen.',ans:'Bewerbungsfoto',col:['ein professionelles Bewerbungsfoto','ein Bewerbungsfoto machen lassen','ein aktuelles Foto'],dict:'Bewerbungsfoto'},
+{lesson:'Bewerbung',en:'die Zeugnisse',uk:'дипломи, сертифікати',ex:'Zu den Unterlagen gehören auch meine ___.',ans:'Zeugnisse',col:['ein Zeugnis bekommen','Zeugnisse kopieren','das Arbeitszeugnis'],dict:'Zeugnis'},
+{lesson:'Bewerbung',en:'das Bewerbungstraining',uk:'тренінг',ex:'Das ___ hilft mir bei der Vorbereitung.',ans:'Bewerbungstraining',col:['ein Bewerbungstraining besuchen','ein Bewerbungstraining machen','am Bewerbungstraining teilnehmen'],dict:'Bewerbungstraining'},
+{lesson:'Bewerbung',en:'das Vorstellungsgespräch, das Bewerbungsgespräch',uk:'співбесіда',ex:'Morgen habe ich ein ___ bei einer großen Firma.',ans:'Vorstellungsgespräch|Bewerbungsgespräch',col:['ein Vorstellungsgespräch haben','zum Vorstellungsgespräch eingeladen werden','ein Bewerbungsgespräch führen'],dict:'Vorstellungsgespräch',say:'das Vorstellungsgespräch, das Bewerbungsgespräch'},
+{lesson:'Bewerbung',en:'ankommen auf Akk.',uk:'залежати від',ex:'Beim Vorstellungsgespräch kommt es sehr ___ den ersten Eindruck an.',ans:'auf',col:['es kommt darauf an','Es kommt auf dich an','darauf kommt es an'],dict:'ankommen',say:'ankommen auf Akkusativ'},
+{lesson:'Bewerbung',en:'gehören zu Dat.',uk:'належати до',ex:'Das Bewerbungsfoto gehört ___ den wichtigen Unterlagen.',ans:'zu',col:['zu den Unterlagen gehören','zur Familie gehören','zu uns gehören'],dict:'gehören',say:'gehören zu Dativ'},
+{lesson:'Bewerbung',en:'sich bewerben um Akk.',uk:'подати заявку',ex:'Ich möchte mich ___ diese Stelle bewerben.',ans:'um',col:['sich um eine Stelle bewerben','sich um einen Job bewerben','sich um einen Studienplatz bewerben'],dict:'bewerben',say:'sich bewerben um Akkusativ'},
+{lesson:'Bewerbung',en:'sich konzentrieren auf Akk.',uk:'концентруватися на',ex:'Vor dem Test muss ich mich gut ___ die Aufgaben konzentrieren.',ans:'auf',col:['sich auf die Arbeit konzentrieren','sich gut konzentrieren','sich konzentrieren können'],dict:'konzentrieren',say:'sich konzentrieren auf Akkusativ'},
+{lesson:'Bewerbung',en:'sich interessieren für Akk.',uk:'цікавитися',ex:'Er interessiert sich sehr ___ diese Stelle.',ans:'für',col:['sich für Technik interessieren','sich für einen Beruf interessieren','Interesse haben'],dict:'interessieren',say:'sich interessieren für Akkusativ'},
+{lesson:'Bewerbung',en:'sich kümmern um Akk.',uk:'турбуватися про, займатися',ex:'Wer kümmert sich ___ die Unterlagen?',ans:'um',col:['sich um die Kinder kümmern','sich um alles kümmern','sich um Hilfe kümmern'],dict:'kümmern',say:'sich kümmern um Akkusativ'},
+{lesson:'Bewerbung',en:'sprechen mit Dat., über Akk., von Dat.',uk:'розмовляти з кимось, про щось, про когось',ex:'Im Gespräch spricht der Chef ___ dem Bewerber.',ans:'mit',col:['mit jemandem sprechen','über ein Problem sprechen','von der Arbeit sprechen'],dict:'sprechen',say:'sprechen mit Dativ, über Akkusativ, von Dativ'},
+{lesson:'Bewerbung',en:'teilnehmen an Dat.',uk:'брати участь у',ex:'Ich möchte ___ einem Bewerbungstraining teilnehmen.',ans:'an',col:['an einem Kurs teilnehmen','an einer Prüfung teilnehmen','an einem Test teilnehmen'],dict:'teilnehmen',say:'teilnehmen an Dativ'},
+{lesson:'Bewerbung',en:'sich vorbereiten auf Akk.',uk:'готуватися до',ex:'Ich bereite mich ___ das Vorstellungsgespräch vor.',ans:'auf',col:['sich auf die Prüfung vorbereiten','sich gut vorbereiten','sich auf ein Gespräch vorbereiten'],dict:'vorbereiten',say:'sich vorbereiten auf Akkusativ'}
 ];
 
 const FORKS=[
-{lesson:'Unterricht 1',word:'machen',ok:['Analysen','einen Fehler','eine Pause'],bad:['Entscheidungen'],why:'Analysen machen, einen Fehler machen, але Entscheidungen treffen.'},
-{lesson:'Unterricht 1',word:'finden',ok:['eine Lösung','einen Job','eine Antwort'],bad:['ein Urteil'],why:'eine Lösung finden, але ein Urteil sprechen.'},
-{lesson:'Unterricht 1',word:'arbeiten',ok:['exakt','körperlich','im Labor','in der Landwirtschaft'],bad:['Gemüse'],why:'exakt arbeiten, im Labor arbeiten, але Gemüse anbauen.'},
-{lesson:'Unterricht 1',word:'durchführen',ok:['Tests','Analysen','ein Experiment'],bad:['Entscheidungen'],why:'Tests und Analysen durchführen, але Entscheidungen treffen.'}
+{lesson:'Arbeitswelt',word:'machen',ok:['Analysen','einen Fehler','eine Pause'],bad:['Entscheidungen'],why:'Analysen machen, einen Fehler machen, але Entscheidungen treffen.'},
+{lesson:'Arbeitswelt',word:'finden',ok:['eine Lösung','einen Job','eine Antwort'],bad:['ein Urteil'],why:'eine Lösung finden, але ein Urteil sprechen.'},
+{lesson:'Arbeitswelt',word:'arbeiten',ok:['exakt','körperlich','im Labor','in der Landwirtschaft'],bad:['Gemüse'],why:'exakt arbeiten, im Labor arbeiten, але Gemüse anbauen.'},
+{lesson:'Arbeitswelt',word:'durchführen',ok:['Tests','Analysen','ein Experiment'],bad:['Entscheidungen'],why:'Tests und Analysen durchführen, але Entscheidungen treffen.'},
+{lesson:'Bewerbung',word:'sich bewerben',ok:['um eine Stelle','um einen Job','um einen Studienplatz'],bad:['zu einer Stelle'],why:'sich bewerben um + Akk.'},
+{lesson:'Bewerbung',word:'schreiben',ok:['ein Bewerbungsschreiben','einen Lebenslauf','eine Bewerbung'],bad:['ein Vorstellungsgespräch'],why:'Bewerbung, Lebenslauf und Bewerbungsschreiben schreibt man, але ein Vorstellungsgespräch hat oder führt man.'},
+{lesson:'Bewerbung',word:'sich vorbereiten',ok:['auf das Gespräch','auf die Prüfung','auf den Test'],bad:['über das Gespräch'],why:'sich vorbereiten auf + Akk.'},
+{lesson:'Bewerbung',word:'teilnehmen',ok:['an einem Training','an einem Kurs','an einem Test'],bad:['mit einem Kurs'],why:'teilnehmen an + Dat.'}
 ];
 
 const SORTS=[
-{lesson:'Unterricht 1',title:'Куди належить фраза?',cats:{
+{lesson:'Arbeitswelt',title:'Куди належить фраза?',cats:{
  'Право й політика':['ein Urteil sprechen','die Gerichtsverhandlungen (Pl.)','die Partei','Entscheidungen treffen'],
  'Наука й техніка':['das Labor','Analysen machen','Tests durchführen','die Technik'],
  'Господарство й виробництво':['Gemüse anbauen','die Landwirtschaft','Geräte herstellen','das Unternehmen'],
- 'Умови роботи':['körperlich anstrengend sein','früh aufstehen','nachmittags frei haben','schmutzig werden']}}
+ 'Умови роботи':['körperlich anstrengend sein','früh aufstehen','nachmittags frei haben','schmutzig werden']}},
+{lesson:'Bewerbung',title:'Куди належить фраза?',cats:{
+ 'Документи':['das Bewerbungsschreiben','der Lebenslauf','das Bewerbungsfoto','die Zeugnisse'],
+ 'Зустрічі й навчання':['das Bewerbungstraining','das Vorstellungsgespräch, das Bewerbungsgespräch'],
+ 'Дії':['sich bewerben um Akk.','sich vorbereiten auf Akk.']}}
 ];
 
 /* ───────── ПОМІЧНИКИ ───────── */
@@ -418,6 +442,27 @@ function validSession(){const s=S.session;
   return s&&Array.isArray(s.queue)&&s.queue.every(e=>BY[e])&&typeof s.pos==='number'&&s.mode===S.mode&&s.res&&Array.isArray(s.hard)&&s.rq;}
 
 const card=$('#card');
+function writeBlock(c){
+  const target=clean(c.en);
+  const inp=h('input',{type:'text',class:'typed',autocomplete:'off',autocapitalize:'off',autocorrect:'off',spellcheck:'false','aria-label':'Пропиши німецьку фразу',placeholder:'Напиши німецькою…'});
+  const fb=h('p',{class:'fb',role:'status'});
+  const go=h('button',{class:'btn btn-dark btn-sm',type:'button'},'Перевірити');
+  let checked=false;
+  function act(){
+    if(checked){checked=false;inp.value='';inp.readOnly=false;inp.className='typed';fb.textContent='';fb.className='fb';go.textContent='Перевірити';inp.focus();return;}
+    const v=norm(inp.value);if(!v)return;checked=true;
+    const good=v===norm(target);
+    inp.classList.add(good?'good':'wrong');inp.readOnly=true;
+    fb.className='fb '+(good?'good':'wrong');fb.textContent=good?'Правильно!':'Має бути: '+target;
+    go.textContent='Ще раз';
+  }
+  go.addEventListener('click',e=>{e.stopPropagation();act();});
+  inp.addEventListener('keydown',e=>{e.stopPropagation();if(e.key==='Enter'){e.preventDefault();act();}});
+  inp.addEventListener('click',e=>e.stopPropagation());
+  const blk=h('div',{class:'block'},h('span',{class:'label'},'Пропиши слово'),inp,fb,h('div',{class:'row'},go));
+  blk.addEventListener('click',e=>e.stopPropagation());
+  return blk;
+}
 function buildCard(c){
   const rev=S.reverse;
   const front=h('div',{class:'face front'},
@@ -436,7 +481,8 @@ function buildCard(c){
       h('div',{class:'side'},spkBtn(sayText(c)),
         h('a',{class:'dict',href:'https://www.duden.de/suchen/dudenonline/'+encodeURIComponent(c.dict),target:'_blank',rel:'noopener',onclick:e=>e.stopPropagation()},'Duden ↗'))),
     h('div',{class:'block'},h('span',{class:'label'},'Приклад'),h('p',{class:'ex'},parts[0],gap,parts[1]||'')),
-    h('div',{class:'block'},h('span',{class:'label'},'Колокації'),h('div',{class:'cols'},c.col.map(x=>h('span',{class:'col'},x)))));
+    h('div',{class:'block'},h('span',{class:'label'},'Колокації'),h('div',{class:'cols'},c.col.map(x=>h('span',{class:'col'},x)))),
+    writeBlock(c));
   return [front,back];
 }
 function setFlip(f,instant){
